@@ -2,7 +2,7 @@
 
 ## What is the project? 
 
-The aim of this project is to develop a quiz-based examination platform for Univerity level courses.
+The aim of this project is to develop a quiz-based examination platform for University level courses.
 
 ## Tech Stack:
 
