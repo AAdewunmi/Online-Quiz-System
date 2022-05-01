@@ -1,8 +1,8 @@
-# Online Quiz System 
+# Examily: An Online Quiz System 
 
 ## What is the project? 
 
-The aim of this project is to develop a quiz platform for Univerity level courses.
+The aim of this project is to develop a quiz-based examination platform for Univerity level courses.
 
 ## Tech Stack:
 
