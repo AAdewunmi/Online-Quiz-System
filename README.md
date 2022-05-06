@@ -4,6 +4,10 @@
 
 The aim of this project is to develop a quiz-based examination platform for University level courses.
 
+### Screenshot of the landing page (Work-In-Progress):
+
+![Image description](web/landing.png)
+
 ## Tech Stack:
 
 1. HTML /CSS /JavaSript /Bootstrap
@@ -34,7 +38,6 @@ The aim of this project is to develop a quiz-based examination platform for Univ
 ## When will the project be complete? 
 
 The project will be complete once all the MVP features have been implemented.
-
 
 ## Adapted from:
 
