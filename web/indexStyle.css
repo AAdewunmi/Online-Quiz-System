@@ -12,9 +12,13 @@ body{
 h1{
   font-size:400px;
   color: red;
+  font-family: 'Caveat', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 p{
   font-size:75px;
   color: white;
+  font-family: 'Caveat', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 
