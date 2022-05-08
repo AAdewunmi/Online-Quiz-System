@@ -27,7 +27,7 @@ li a
         padding: 14px 16px;
         text-decoration: none; 
 }
-li a:HOVER {
+div{
 background-color: aqua;
 }
 
