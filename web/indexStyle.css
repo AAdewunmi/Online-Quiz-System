@@ -7,18 +7,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : adrianadewunmi
 */
 body{
-  background-color: black;
+  
 }
 h1{
-  font-size:400px;
-  color: red;
-  font-family: 'Caveat', cursive;
-  font-family: 'Indie Flower', cursive;
+    font-size: 100px;
 }
-p{
-  font-size:75px;
-  color: white;
-  font-family: 'Caveat', cursive;
-  font-family: 'Indie Flower', cursive;
+.colsize{
+    height: 100px;
 }
 

@@ -1,59 +1,104 @@
 <!doctype html>
-<!-- HOME PAGE -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="indexStyle.css">
-    <title>Welcome Page!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexStyle.css"/>
+    <title>Examily</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black justify-content-center">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <img src="circle_red_letter.png" alt="" width="30" height="24">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" href="AdminLogin.jsp"><b>Administrator</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="StudentLogin.jsp"><b>Student</b></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><b>Contact Us</b></a>
-                </li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+         <img src="circle_red_letter.png" alt="" width="30" height="24">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Examiner</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Student</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
-        </nav>
-    </div>
-    <div class="container">
-      <h1>Examily</h1>
-      <p>
-        A quiz-based examination platform for University level courses.
-      </p>
-    </div>
-    <div class="container">
-      <footer style="color: white">
-      © 2022 Examily, Inc.
-      </footer>
-    </div>
-
+        </div>
+       </nav>
+      <div class="row">
+          <div class="col-md-12">
+                <div class="mt-4 p-5 bg-light text-black rounded">
+                    <h1>Examily</h1> 
+                    <p>A quiz-based examination platform for University level courses!</p> 
+                        <form class="row g-3">
+                            <div class="col-auto">
+                              <label for="inputPassword2" class="visually-hidden">Password</label>
+                              <input type="password" class="form-control" id="inputPassword2" placeholder="Enter work email address ... ">
+                            </div>
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-primary mb-3">Start free trial!</button>
+                            </div>
+                        </form>
+                </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h2>Live Quizzes!</h2>
+                  <p>Make learning more fun, dynamic and social with live quizzes.</p>
+              </div> 
+              <div class="col-6">
+                 <img src="student.jpg" alt="" class="img-thumbnail img">
+              </div>
+          </div>
+      </div>
+       <div class="container">
+          <div class="row">
+              <div class="col-6">
+                 <img src="log.jpg" alt="" class="img-thumbnail">
+              </div>
+              <div class="col-6">
+                  <h2>How it works!</h2>
+                  <p>Create your live online quiz and let your participants vote from any device using a link or QR code – no logins needed.</p>
+              </div> 
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-6">
+                  <h2>Create a fun learning experience!</h2>
+                  <p>Design a quiz with questions that fit the topic of your presentation or training. Add options and mark the correct answers.</p>
+              </div> 
+              <div class="col-6">
+                 <img src="" alt="" class="img-thumbnail">
+              </div>
+          </div>
+      </div>
+       <div class="">
+            <footer>
+                 © 2022 Examily, Inc.
+            </footer>
+       </div>
 
     <!-- Separate Popper and Bootstrap JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
-
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
   </body>
 </html>

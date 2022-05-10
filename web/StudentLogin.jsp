@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link href="/Users/adrianadewunmi/Netbeans/Online-Quiz-System/web/studentLoginCSS.css" rel="stylesheet" type="text/css">
     <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="studentLoginCSS.css">
     <title>Student Login</title>
 </head>
 <body>
