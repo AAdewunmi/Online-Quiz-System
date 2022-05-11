@@ -31,4 +31,7 @@ li
 	li a:HOVER {
 	background-color: aqua;
 }
+body{
+    background-color: red;
+}
 
