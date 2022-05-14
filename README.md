@@ -6,7 +6,7 @@ The aim of this project is to develop a quiz-based examination platform for Univ
 
 ### Screenshot of the landing page (Work-In-Progress):
 
-![Image description](web/landing.png)
+![Image description](web/landing2.png)
 
 ## Tech Stack:
 
