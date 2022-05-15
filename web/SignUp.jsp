@@ -5,14 +5,67 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="signUpCSS.css"/>
-        <title>Sign Up</title>
-    </head>
-    <body>
-        <h1>Sign Up!</h1>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="signUpCSS.css"/>
+    <title>Sign Up!</title>
+  </head>
+  <body>
+      
+      
+    <div class="container">
+        <main class="signup-container">
+          <p class="text-mute">START FOR FREE</p>
+          <h1 class="heading-primary">Create new account<span class="custom-dot">.</span></h1>
+          <p class="text-mute">Already A Member? <a href="$">Log in</a></p>
+          <form class="signup-form">
+            <div class="f-row input-wrapper">
+              <label class="inp">
+                <input type="text" class="input-text" placeholder="&nbsp;">
+                <span class="label">First name</span>
+                <span class="input-icon"><i class="fa-solid fa-address-card"></i></span>
+              </label>
+              <label class="inp">
+                <input type="text" class="input-text" placeholder="&nbsp;">
+                <span class="label">Last name</span>
+                <span class="input-icon"><i class="fa-solid fa-address-card"></i></span>
+              </label>
+            </div>
+            <label class="inp">
+              <input type="email" class="input-text" placeholder="&nbsp;">
+              <span class="label">Email</span>
+              <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+            </label>
+            <label class="inp">
+              <input type="password" class="input-text" placeholder="&nbsp;" id="password">
+              <span class="label">Password</span>
+              <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
+            </label>
+            <button class="btn btn-signup">Create account</button>
+          </form>
+        </main>
+        <div class="welcome-container">
+            <!-- <h1 class="heading-secondary">Welcome to <span class="lg">Planner Buddy!</span></h1> -->
+            <img src="logo.png" width="1000px" height="100px" alt="alt"/>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
