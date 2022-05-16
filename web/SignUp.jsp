@@ -73,6 +73,8 @@
         <div class="welcome-container">
             <!-- <h1 class="heading-secondary">Welcome to <span class="lg">Planner Buddy!</span></h1> -->
             <img src="logo.png" width="1000px" height="100px" alt="alt"/>
+            <img src="https://adityawahyuramadhan.github.io/hosted-assets/Freelanco/image-floor.svg" alt="" class="position-absolute locate-floor scale-down" style="z-index: -99;">
+             
         </div>
     </div>
       
