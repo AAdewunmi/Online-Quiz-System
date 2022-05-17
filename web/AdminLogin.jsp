@@ -4,41 +4,90 @@
     Author     : adrianadewunmi
 --%>
 <%--Document:AdminLogin--%>
-<!DOCTYPE html>
-<html>
-<head>
-<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" href="adminLoginCSS.css">
-<title>Admin Login</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-	<font color="blue"><center><h1>Admin Login</h1></center></font>
-	<font color="red" >
-		<%
-			if(request.getParameter("msg2") != null)
-				out.print(request.getParameter("msg2"));
-		%>
-		</font>
-			<font color="green" >
-		<%
-			if(request.getParameter("msg1") != null)
-				out.print(request.getParameter("msg1"));
-		%>
-		</font>
-	<form action="oes.controller.ValidateAdmin" method="post">
-		<pre>
-			Username 		:	<input type="text" name="uname">	 
-			Password 	        :       <input type="password" name="pass">	 
-						 	<input  onclick="location.href='index.html'" type="button" value="Exit" class="btn btn-outline-primary">          <input type="submit" value="Login" class="btn btn-outline-primary">
-							
-		</pre>
-	</form>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexStyle.css"/>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+         <img src="circle_red_letter.png" alt="" width="30" height="24">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactUs.jsp">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </nav> 
+      
+    <div class="container">
+        <main class="signup-container">
+          <h1 class="heading-primary">Log in<span class="span-blue">.</span></h1>
+          <p class="text-mute">Enter your credentials to access your account.</p>
+          <div class="login-wrapper">
+            <a href="#" class="btn btn-google">
+              <img src="https://img.icons8.com/fluency/48/000000/google-logo.png" />
+              Log In with Google
+            </a>
+            <div class="line-breaker">
+              <span class="line"></span>
+              <span>or</span>
+              <span class="line"></span>
+            </div>
+          </div>
 
-</body>
+          <form class="signup-form">
+            <label class="inp">
+              <input type="email" class="input-text" placeholder="&nbsp;">
+              <span class="label">Email</span>
+              <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+            </label>
+            <label class="inp">
+              <input type="password" class="input-text" placeholder="&nbsp;" id="password">
+              <span class="label">Password</span>
+              <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
+            </label>
+            <button class="btn btn-login">Login</button>
+          </form>
+          <p class="text-mute">Not a member? <a href="$">Sign up</a></p>
+        </main>
+        <div class="welcome-container">
+          <h1 class="heading-secondary">Welcome to <span class="lg">Planner Buddy!</span></h1>
+          <img src="https://png2.cleanpng.com/sh/82506800d9e08bf14cb0a38d53322fea/L0KzQYm3VsI1N6Rug5H0aYP2gLBuTfxieKV0iJ9taYPzfLLCTfRmfppofZ92dXz3eb7shPliNZ1miOZ4cD3wf7TylgAuPZM3fqNsMEC4RIKAUsQvOmU5SaUBMkm0RYOCWME1OGI7S6Y9NT7zfri=/kisspng-laptop-display-device-multimedia-laptop-mockup-5b2f1c00541724.2441362915298140163445.png" alt="">
+        </div>
+</div>
+    
+    <div class="footer">
+       <footer>
+            © 2022 Examily, Inc. 
+       </footer>
+     </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
