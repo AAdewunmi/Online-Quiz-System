@@ -43,7 +43,7 @@
         <main class="signup-container">
           <p class="text-mute">START FOR FREE</p>
           <h1 class="heading-primary">Create new account<span class="custom-dot">.</span></h1>
-          <p class="text-mute">Already A Member? <a href="$">Log in</a></p>
+          <p class="text-mute">Already A Member? <a href="AdminLogin.jsp">Log in</a></p>
           <form class="signup-form">
             <div class="f-row input-wrapper">
               <label class="inp">
@@ -71,8 +71,7 @@
           </form>
         </main>
         <div class="welcome-container">
-            <!-- <h1 class="heading-secondary">Welcome to <span class="lg">Planner Buddy!</span></h1> -->
-            <img src="logo.png" width="1000px" height="100px" alt="alt"/>
+            <h1 class="heading-secondary">Welcome to <span class="lg">Examily!</span></h1>
             <img src="https://adityawahyuramadhan.github.io/hosted-assets/Freelanco/image-floor.svg" alt="" class="position-absolute locate-floor scale-down" style="z-index: -99;">
              
         </div>

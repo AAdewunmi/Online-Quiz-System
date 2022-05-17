@@ -14,7 +14,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="indexStyle.css"/>
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="adminLoginCSS.css"/>
+    <title>Examiner Login!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,25 +52,35 @@
               <span class="line"></span>
             </div>
           </div>
-
-          <form class="signup-form">
+          <%
+            if(request.getParameter("msg2") != null)
+                    out.print(request.getParameter("msg2"));
+	  %>
+          <%
+            if(request.getParameter("msg1") != null)
+                    out.print(request.getParameter("msg1"));
+	  %>
+          <form class="signup-form" action="oes.controller.ValidateAdmin" method="post">
+           
             <label class="inp">
-              <input type="email" class="input-text" placeholder="&nbsp;">
-              <span class="label">Email</span>
+              <input type="text" class="input-text" placeholder="&nbsp;" name="uname">
+              <span class="label">User Name</span>
               <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
             </label>
             <label class="inp">
-              <input type="password" class="input-text" placeholder="&nbsp;" id="password">
+              <input type="password" class="input-text" placeholder="&nbsp;" id="password" name="pass">
               <span class="label">Password</span>
               <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
             </label>
-            <button class="btn btn-login">Login</button>
+            <button class="btn btn-login" type="submit" value="login">Login</button>
+           
           </form>
-          <p class="text-mute">Not a member? <a href="$">Sign up</a></p>
+          <p class="text-mute">Not a member? <a href="SignUp.jsp">Sign up</a></p>
         </main>
         <div class="welcome-container">
-          <h1 class="heading-secondary">Welcome to <span class="lg">Planner Buddy!</span></h1>
-          <img src="https://png2.cleanpng.com/sh/82506800d9e08bf14cb0a38d53322fea/L0KzQYm3VsI1N6Rug5H0aYP2gLBuTfxieKV0iJ9taYPzfLLCTfRmfppofZ92dXz3eb7shPliNZ1miOZ4cD3wf7TylgAuPZM3fqNsMEC4RIKAUsQvOmU5SaUBMkm0RYOCWME1OGI7S6Y9NT7zfri=/kisspng-laptop-display-device-multimedia-laptop-mockup-5b2f1c00541724.2441362915298140163445.png" alt="">
+            <h1 class="heading-secondary">Welcome to <span class="lg">Examily!</span></h1>
+            <img src="https://adityawahyuramadhan.github.io/hosted-assets/Freelanco/image-floor.svg" alt="" class="position-absolute locate-floor scale-down" style="z-index: -99;">
+             
         </div>
 </div>
     
