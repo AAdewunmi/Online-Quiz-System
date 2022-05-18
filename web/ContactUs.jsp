@@ -4,99 +4,61 @@
     Author     : adrianadewunmi
 --%>
 
-<!--Section: Contact v.2-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>How To Create Bootstrap 4 Contact Form With Map</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <div class="container">
                 <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
+                    <div class="col-md-7">
+                        <div class="section-title">
+                            <h2>Contact Us</h2>
+                            <p><b>Bootstrap 4 contact form</b> is designed with a Google map. contact form pages design is created by using Bootstrap and custom CSS</p>
                         </div>
                     </div>
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
                 <div class="row">
+                    <div class="col-lg-7">
+                        <form action="/" class="mb-4 mb-lg-0">
+                            <div class="form-row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" placeholder="Type Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-light">Contact Now</button>
+                        </form>
+                    </div>
 
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
+                    <div class="col-lg-5">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571289.733943155!2d76.08560099999998!3d29.058775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4a4b98404f57%3A0x75ffae70833e8448!2sShahbad%2C%20Haryana%20136135!5e0!3m2!1sen!2sin!4v1594195370933!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
-
                     </div>
                 </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
+        </section>
+        <!-- End Contact Us Section -->
+    </body>
+</html>
 
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-    </div>
-
-</section>
-<!--Section: Contact v.2-->
