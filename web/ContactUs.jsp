@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>How To Create Bootstrap 4 Contact Form With Map</title>
+        <title>Contact Us!</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Bootstrap CSS -->
@@ -16,8 +16,29 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="contactUSCSS.css"/>
+        <link rel="stylesheet" href="indexStyle.css"/>
     </head>
     <body>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+         <img src="circle_red_letter.png" alt="" width="30" height="24">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactUs.jsp">Contact Us</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+       </nav> 
         <!-- Contact Us Section -->
         <section class="contact-us">
             <div class="container">
@@ -25,7 +46,7 @@
                     <div class="col-md-7">
                         <div class="section-title">
                             <h2>Contact Us</h2>
-                            <p><b>Bootstrap 4 contact form</b> is designed with a Google map. contact form pages design is created by using Bootstrap and custom CSS</p>
+                            <p>Drop your inquiry here and our experts will get back to you!</p>
                         </div>
                     </div>
                 </div>
@@ -52,13 +73,51 @@
 
                     <div class="col-lg-5">
                         <div class="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3571289.733943155!2d76.08560099999998!3d29.058775699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e4a4b98404f57%3A0x75ffae70833e8448!2sShahbad%2C%20Haryana%20136135!5e0!3m2!1sen!2sin!4v1594195370933!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                           
+                            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                           
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="container">
+                 <h3>Address</h3>
+         </div>
+        <div class="container">
+            <div class="row">
+                 <div class="col-md-6">
+                        <address>
+                            <strong>
+                                New York City
+                            </strong>
+                            <br>
+                            754 9th Ave At 51st Street,  <br>
+                            New York City, NY 10019-8419<br>
+                            <abbr title="Telephone">T:</abbr> <a href="tel: +1 212-977-1588">+1 212-977-1588</a> <br>
+                            <abbr title="Mail">M:</abbr><a href="mailto: info@examily.com">info@examily.com</a><br>
+                        </address>
+                </div>
+                <div class="col-md-6">
+                </div>
+                </div>
+        </div>
+        <div class="footer">
+            <footer>
+                 © 2022 Examily, Inc. 
+            </footer>
+        </div>
         <!-- End Contact Us Section -->
+         <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
     </body>
 </html>
 
