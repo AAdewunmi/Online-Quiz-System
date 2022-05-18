@@ -4,6 +4,7 @@
     Author     : adrianadewunmi
 --%>
 <%--Document:AdminLogin--%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -86,7 +87,7 @@
     
     <div class="footer">
        <footer>
-            © 2022 Examily, Inc. 
+            Â© 2022 Examily, Inc. 
        </footer>
      </div>
 
