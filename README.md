@@ -29,9 +29,9 @@ The aim of this project is to develop a quiz-based examination platform for Univ
 
 ## What is the MVP?
 
-1. Administration User: Login, Set Quiz, View Results, Log Out.
+1. Administration User: Create Examiner / User Account, Login, Set Quiz, View Results, Log Out.
 
-2. Student User: Register, Login, Take Quiz, Log Out.
+2. Student User: Login, Take Quiz, Log Out.
 
 ## What are the sprinkles (Nice to haves)? 
 
