@@ -4,9 +4,17 @@
         <servlet-name>ValidateAdmin</servlet-name>
         <servlet-class>oes.controller.ValidateAdmin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidateStudent</servlet-name>
+        <servlet-class>oes.controller.ValidateStudent</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidateAdmin</servlet-name>
         <url-pattern>/ValidateAdmin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidateStudent</servlet-name>
+        <url-pattern>/ValidateStudent</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
