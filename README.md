@@ -10,7 +10,7 @@ The aim of this project is to develop a quiz-based examination platform for Univ
 
 ## Tech Stack:
 
-1. HTML /CSS /JavaSript /Bootstrap
+1. HTML / CSS / JavaSript / Bootstrap
 
 2. Java 11 / Java EE version 8 (Jakarta EE version 8)
 
@@ -20,7 +20,7 @@ The aim of this project is to develop a quiz-based examination platform for Univ
 
 5. JDBC Driver
 
-6. MySQL DB /MySQL Server /MySQL Workbench
+6. MySQL DB / MySQL Server / MySQL Workbench
 
 7. Apache Tomcat Server
 
