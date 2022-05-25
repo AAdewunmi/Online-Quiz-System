@@ -15,11 +15,19 @@ import jakarta.servlet.http.*;
  * @author adrianadewunmi
  */
 
-// importing all packages
-
+// Importing other Java files
+import oes.db.Admins;
+import oes.model.AdminsDao;
+@WebServlet("/oes.controller.ValidateAdmin")
 
 public class ValidateAdmin extends HttpServlet {
+    
+    private static final long serialVersionUID = 1L;
 
+    public ValidateAdmin() {
+        super();
+    }
+    
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -31,7 +39,31 @@ public class ValidateAdmin extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        PrintWriter out = response.getWriter();
+        response.setContentType("text/html");
+
+        String username = request.getParameter("uname");
+        String password = request.getParameter("pass");
+        
+        Admins ad = new Admins(); // Creating object
+        ad.setUsername(username);
+        ad.setPassword(password);
+		
+        boolean status = AdminsDao.doValidate(ad);
+        if(status)
+	    {
+                //Logged in  as admin do something (pending)
+                HttpSession session = request.getSession();
+                session.setAttribute("username", ad.getUsername());
+                response.sendRedirect("AdminPanel.jsp");
+	    }
+	    else
+	    {
+	    	String msg2 = "Invalid Username or Password";
+	    	response.sendRedirect("AdminLogin.jsp?msg2="+msg2);
+	    }
+        
     }
 
 
