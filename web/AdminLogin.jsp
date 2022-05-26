@@ -53,14 +53,18 @@
               <span class="line"></span>
             </div>
           </div>
+          <font color="red">
           <%
             if(request.getParameter("msg2") != null)
                     out.print(request.getParameter("msg2"));
 	  %>
+          </font>
+          <font color="green">
           <%
             if(request.getParameter("msg1") != null)
                     out.print(request.getParameter("msg1"));
 	  %>
+          </font>
           <form class="signup-form" action="oes.controller.ValidateAdmin" method="post">
            
             <label class="inp">
