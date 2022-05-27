@@ -119,5 +119,27 @@ public class StudentsDao {
         return status;
     }
     
+    public static String getStudentName(String username){
+        String name = null;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "select name from studenttable where userid=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, username);
+            ResultSet rs = pst.executeQuery();
+            if(rs.next()){
+                name = rs.getString(1);
+            }else{
+                name = "DB-ERROR!";
+                System.out.println("Get Student Name Query Unsuccessful!");
+            }
+        }catch(SQLException e){
+           name = e.getMessage();
+           System.out.println("ERROR! -> SQLException");
+           System.out.println(e);
+        }
+        return name;
+    }
+    
     
 }
