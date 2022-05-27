@@ -89,10 +89,35 @@ public class StudentsDao {
                 
             }
         }catch(SQLException e){
-             System.out.println("ERROR! -> SQLException");
+            System.out.println("ERROR! -> SQLException");
             System.out.println(e);
         }
         return samp;
     }
+    
+    public static int deleteRecord(Students st){
+        
+        int status = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "delete from  studenttable where userid=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, st.getUsername());
+            int val = pst.executeUpdate();
+            if(val > 0){
+                status = 1;
+                System.out.println("Update Successful!");
+            }else{
+                status = 0;
+                System.out.println("Update Unsuccessful!");
+            }
+            
+        }catch(SQLException e){
+           System.out.println("ERROR! -> SQLException");
+           System.out.println(e);
+        }
+        return status;
+    }
+    
     
 }
