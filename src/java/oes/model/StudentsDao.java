@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import oes.db.Provider;
 import oes.db.Students;
 
@@ -67,6 +68,31 @@ public class StudentsDao {
             System.out.println(e);
         }
         return status;
+    }
+    
+    public static ArrayList<Students> getAllRecords(){
+        
+        ArrayList<Students> samp = new ArrayList<>();
+        try{
+            samp.clear();
+            Connection con = Provider.getOracleConnection();
+            String sql = "select * from studenttable";
+            PreparedStatement pst = con.prepareStatement(sql);
+            ResultSet rs = pst.executeQuery();
+            
+            while(rs.next()){
+                Students s = new Students();
+                s.setName(rs.getString(1));
+                s.setPassword(rs.getString(2));
+                s.setName(rs.getString(3));
+                samp.add(s);
+                
+            }
+        }catch(SQLException e){
+             System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return samp;
     }
     
 }
