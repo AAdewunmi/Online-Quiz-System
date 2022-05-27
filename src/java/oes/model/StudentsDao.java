@@ -141,5 +141,33 @@ public class StudentsDao {
         return name;
     }
     
+    public static int doUpdateNowRecord(String originalusername,String newuserid,String newpassword,String newname){
+        
+        int status = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "update studenttable set userid=?,password=?,name=? where userid=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, newuserid);
+            pst.setString(2, newpassword);
+            pst.setString(3, newname);
+            pst.setString(4, originalusername);
+            
+            int val = pst.executeUpdate();
+            
+            if(val > 0){
+                status = 1;
+                System.out.println("Update Successful!");
+            }else{
+                status = -1;
+                System.out.println("Update Unsuccessful!");
+            }
+        }catch(SQLException e){
+            status = 2;
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return status;
+    }
     
 }
