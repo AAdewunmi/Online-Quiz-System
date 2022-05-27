@@ -43,4 +43,30 @@ public class StudentsDao {
         return status;
     }
     
+    public static boolean insertStudent(Students st){
+        
+        boolean status = false;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "insert into studenttable values(?,?,?)";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, st.getUsername());
+            pst.setString(2, st.getPassword());
+            pst.setString(3, st.getName());
+            // int val = pst.executeQuery(); Original Codebase
+            int val = pst.executeUpdate();
+            if(val > 0){
+                status = true;
+            }else{
+                status = false;
+                System.out.println("ERROR! -> Connection status = false");
+            }
+            
+        }catch(SQLException e){
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return status;
+    }
+    
 }
