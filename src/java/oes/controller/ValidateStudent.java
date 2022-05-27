@@ -17,9 +17,7 @@ import jakarta.servlet.http.*;
  */
 
 //importing all packages
-import oes.db.Admins;
 import oes.db.Students;
-import oes.model.AdminsDao;
 import oes.model.StudentsDao;
 
 @WebServlet("/oes.controller.ValidateStudent")
