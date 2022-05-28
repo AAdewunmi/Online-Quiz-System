@@ -53,7 +53,7 @@ public class ValidateAdmin extends HttpServlet {
         ad.setPassword(password);
 		
         boolean status = AdminsDao.doValidate(ad);
-        if(status)
+            if(status)
 	    {
                 //Logged in  as admin do something (pending)
                 HttpSession session = request.getSession();
