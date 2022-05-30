@@ -94,4 +94,33 @@ public class QuestionsDao {
         return status;
     }
     
+    public static int doUpdateNowRecord(String OriginalQuestion,String newQuestion,String opta,String optb,String optc,String optd,String ans){
+        
+        int status = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "update questiontable set question=?,a=?,b=?,c=?,d=?,answer=? where question=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, newQuestion);
+            pst.setString(2, opta);
+            pst.setString(3, optb);
+            pst.setString(4, optc);
+            pst.setString(5, optd);
+            pst.setString(6, ans);
+            pst.setString(7, OriginalQuestion);
+            
+            int val = pst.executeUpdate();
+            if(val > 0){
+                status = 1;
+            }else{
+                status = -1;
+            }
+        }catch(SQLException e){
+            status = 2;
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return status;
+    }
+    
 }
