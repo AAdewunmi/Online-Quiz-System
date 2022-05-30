@@ -78,7 +78,7 @@ public class StudentsDao {
             Connection con = Provider.getOracleConnection();
             String sql = "select * from studenttable";
             PreparedStatement pst = con.prepareStatement(sql);
-            ResultSet rs = pst.executeQuery();
+            ResultSet rs = pst.executeQuery(sql);
             
             while(rs.next()){
                 Students s = new Students();
