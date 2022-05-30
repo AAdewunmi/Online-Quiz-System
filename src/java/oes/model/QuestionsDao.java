@@ -74,4 +74,24 @@ public class QuestionsDao {
         return samp;
     }
     
+    public static int deleteRecord(Questions q){
+        int status = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "delete from questiontable where question=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, q.getQuestion());
+            int val = pst.executeUpdate();
+            if(val > 0){
+                status = 1;
+            }else{
+                status = 0;
+            }
+        }catch(SQLException e){
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return status;
+    }
+    
 }
