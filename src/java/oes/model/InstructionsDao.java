@@ -6,7 +6,9 @@ package oes.model;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import oes.db.Instructions;
 import oes.db.Provider;
 
@@ -38,6 +40,27 @@ public class InstructionsDao {
             System.out.println(e);
         }
         return status;
+    }
+    
+    public static ArrayList<Instructions> getAllRecords(){
+        ArrayList<Instructions> samp = new ArrayList<>();
+        try{
+            samp.clear();
+            Connection con = Provider.getOracleConnection();
+            String sql = "select * from instructiontable";
+            PreparedStatement pst = con.prepareStatement(sql);
+
+            ResultSet rs = pst.executeQuery(sql);
+            while(rs.next()){
+                Instructions i = new Instructions();
+                i.setInstruction(rs.getString(1));
+                samp.add(i);
+            }
+        }catch(SQLException e){
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return samp;
     }
     
 }
