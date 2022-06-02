@@ -43,6 +43,7 @@ public class InstructionsDao {
     }
     
     public static ArrayList<Instructions> getAllRecords(){
+        
         ArrayList<Instructions> samp = new ArrayList<>();
         try{
             samp.clear();
@@ -77,6 +78,29 @@ public class InstructionsDao {
             System.out.println(e);
         }
         return val;
+    }
+    
+    public static int doUpdateNowRecord(String instaoriginal,String instamodified){
+        
+        int status = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "update instructiontable set instruction=? where instruction=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, instamodified);
+            pst.setString(1, instaoriginal);
+            int val = pst.executeUpdate();
+            if(val > 0){
+                status = 1;
+            }else{
+                status = -1;
+            }
+        }catch(SQLException e){
+            status = 2;
+            System.out.println("ERROR! -> SQLException");
+            System.out.println(e);
+        }
+        return status;
     }
     
 }
