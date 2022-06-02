@@ -63,4 +63,20 @@ public class InstructionsDao {
         return samp;
     }
     
+    public static int deleteRecord(Instructions ist){
+        
+        int val = 0;
+        try{
+            Connection con = Provider.getOracleConnection();
+            String sql = "delete from instructiontable where instruction=?";
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, ist.getInstruction());
+            val = pst.executeUpdate();
+        }catch(SQLException e){
+            val = -1;
+            System.out.println(e);
+        }
+        return val;
+    }
+    
 }
