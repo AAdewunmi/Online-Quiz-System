@@ -12,6 +12,10 @@
         <servlet-name>InstructionInsert</servlet-name>
         <servlet-class>oes.controller.InstructionInsert</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutStudent</servlet-name>
+        <servlet-class>oes.controller.LogoutStudent</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidateAdmin</servlet-name>
         <url-pattern>/ValidateAdmin</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>InstructionInsert</servlet-name>
         <url-pattern>/InstructionInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutStudent</servlet-name>
+        <url-pattern>/LogoutStudent</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
