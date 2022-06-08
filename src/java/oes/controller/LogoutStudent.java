@@ -4,18 +4,21 @@
  */
 package oes.controller;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.*;
+import javax.servlet.http.*;
 /**
  *
  * @author adrianadewunmi
  */
+@WebServlet("/oes.controller.LogoutStudent")
+
 public class LogoutStudent extends HttpServlet {
+
+    public LogoutStudent() {
+        super();
+    }
 
     
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -30,10 +33,10 @@ public class LogoutStudent extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        HttpSession session = request.getSession();
+        session.invalidate();
+        String msg1 = "Logged out successfully";
+        response.sendRedirect("StudentLogin.jsp?msg1="+msg1);
     }
-
- 
-  
 
 }
