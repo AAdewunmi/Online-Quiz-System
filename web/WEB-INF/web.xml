@@ -24,6 +24,10 @@
         <servlet-name>QuestionInsert</servlet-name>
         <servlet-class>oes.controller.QuestionInsert</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>StudentInsert</servlet-name>
+        <servlet-class>oes.controller.StudentInsert</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ValidateAdmin</servlet-name>
         <url-pattern>/ValidateAdmin</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>QuestionInsert</servlet-name>
         <url-pattern>/QuestionInsert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>StudentInsert</servlet-name>
+        <url-pattern>/StudentInsert</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
