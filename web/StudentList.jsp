@@ -27,36 +27,37 @@
     <center><h3><pre><font color="blue">List of all Students</font></h3></pre></center>
     <table class="table table-bordered table-hover">
         <tr tr class="table-dark">
-            <th>s no.</th>
+                <th>s no.</th>
                 <th>User Id</th>
                 <th>name</th>
                 <th>password</th>
                 <th>Update</th>
                 <th>Delete</th>
-        </tr>
-        <tr>
-             <%
-                int i = 0;
-                ArrayList<Students> allstudents = StudentsDao.getAllRecords();
-                for(Students e : allstudents)
-                    {  
-             %>
-        </tr>
-            <td><%=i++%></td>
-            <td><%=e.getUsername() %></td>
-            <td><%=e.getName()%></td>
-            <td><%=e.getPassword() %></td>
-            <td><a href="updatestudent.jsp?username=<%=e.getUsername()%>">Update</a></td>
-            <td><a href="deletestudent.jsp?username=<%=e.getUsername()%>">Delete</a></td>
-        <tr>
-            <%
-                    }
-            %>
-        </tr>
-        <tr>
-            <th colspan="2"><center><input type="button" value="Add Student"  class="btn btn-outline-success" onclick="location.href='AddStudent.jsp'"></center></th>
-            <th colspan="2"><input type="hidden"></th>
-            <th colspan="2"  ><center><input type="button"  class="btn btn-outline-danger" value="Back to Panel" onclick="location.href='AdminPanel.jsp'"></center></th>
+                <tr>
+                <%
+                   int i = 0;
+                   ArrayList<Students> allstudents = StudentsDao.getAllRecords();
+                   for(Students e : allstudents)
+                       {  
+                %>
+                </tr>
+                <tr>
+                    <td><%=i++%></td>
+                    <td><%=e.getUsername() %></td>
+                    <td><%=e.getName()%></td>
+                    <td><%=e.getPassword() %></td>
+                    <td><a href="updatestudent.jsp?username=<%=e.getUsername()%>">Update</a></td>
+                    <td><a href="deletestudent.jsp?username=<%=e.getUsername()%>">Delete</a></td>
+
+                    <%
+                            }
+                    %>
+                </tr>
+                <tr>
+                    <th colspan="2"><center><input type="button" value="Add Student"  class="btn btn-outline-success" onclick="location.href='AddStudent.jsp'"></center></th>
+                    <th colspan="2"><input type="hidden"></th>
+                    <th colspan="2"  ><center><input type="button"  class="btn btn-outline-danger" value="Back to Panel" onclick="location.href='AdminPanel.jsp'"></center></th>
+                </tr>
         </tr>
     </table>
    
