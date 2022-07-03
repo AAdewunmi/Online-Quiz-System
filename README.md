@@ -1,10 +1,10 @@
-# Examily: An Online Quiz System 
+# Examily: An Online Quiz System (Work-In-Progress)
 
 ## What is the project? 
 
 The aim of this project is to develop a quiz-based examination platform for University level courses.
 
-### Screenshot of the landing page (Work-In-Progress):
+### Screenshot of the landing page:
 
 ![Image description](web/landing2.png)
 
