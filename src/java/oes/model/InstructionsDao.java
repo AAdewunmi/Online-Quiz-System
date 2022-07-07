@@ -50,7 +50,6 @@ public class InstructionsDao {
             Connection con = Provider.getOracleConnection();
             String sql = "select * from instructiontable";
             PreparedStatement pst = con.prepareStatement(sql);
-
             ResultSet rs = pst.executeQuery(sql);
             while(rs.next()){
                 Instructions i = new Instructions();
