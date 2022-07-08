@@ -28,7 +28,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <meta charset="ISO-8859-1">
-    <title>Student Instructions</title>
+    <title>Student to Instructions</title>
   </head>
   <body>
        <%
