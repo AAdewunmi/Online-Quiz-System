@@ -42,15 +42,15 @@ The project will be complete once all the MVP features have been implemented.
 ## Adapted from:
 
 
-UDEMY: Java Programming Bootcamp, Develop 20 Real World Projects, Java Web Application Development Course,
+UDEMY: Java Development Mega Course: Build Projects Practically
 
-Learn To Build Projects Using JSP, JDBC, Servlets, Swing, Spring Boot, Hibernate
+(Java Programming Course: Learn Development of JAVA Projects Using JSP, JDBC, Servlets, Swing, Spring Boot, Maven, Hibernate)
 
-Project Name: Project 3: Online Quiz Sysem
+Project Name: Project 36: Online Quiz Sysem
 
 Created by: Engineering.Org.In
 
-Date Created: Last updated 11/2021
+Last updated: 03/2022
 
-URL: https://www.udemy.com/course/build-real-world-java-projects-jsp-servlets-springboot/
+URL: https://www.udemy.com/course/build-real-world-java-projects-using-spring-jsp-jdbc/
 
