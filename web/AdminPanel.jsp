@@ -4,8 +4,7 @@
     Author     : adrianadewunmi
 --%>
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -56,8 +55,11 @@
    <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6"><center><input onclick="location.href='QuestionList.jsp'"type="button" value="Add/Update Question" class="btn btn-outline-primary btn-lg btn-block"></center></div>
+     <!-- comment
       <div class="col-sm-6"><center><input onclick="location.href='oes.controller.LogoutAdmin'"type="button" value="Logout" class="btn btn-outline-primary btn-lg btn-block"></center></div>
-    </div>  
+      -->
+      <div class="col-sm-6"><center><input onclick="location.href='AdminLogin.jsp'"type="button" value="Logout" class="btn btn-outline-primary btn-lg btn-block"></center></div>
+      </div>  
   </div>
   </center>
     <!-- Bootstrap Bundle with Popper -->
