@@ -36,7 +36,7 @@ public class InstructionsDao {
                 System.out.println("ERROR! -> Connection status = false");
             }
         }catch(SQLException e){
-            System.out.println("ERROR! -> SQLException");
+            System.out.println("ERROR! -> SQLException(1)");
             System.out.println(e);
         }
         return status;
@@ -57,7 +57,7 @@ public class InstructionsDao {
                 samp.add(i);
             }
         }catch(SQLException e){
-            System.out.println("ERROR! -> SQLException");
+            System.out.println("ERROR! -> SQLException(2)");
             System.out.println(e);
         }
         return samp;
@@ -75,6 +75,7 @@ public class InstructionsDao {
         }catch(SQLException e){
             val = -1;
             System.out.println(e);
+            System.out.println("ERROR! -> SQLException(3)");
         }
         return val;
     }
@@ -96,7 +97,7 @@ public class InstructionsDao {
             }
         }catch(SQLException e){
             status = 2;
-            System.out.println("ERROR! -> SQLException");
+            System.out.println("ERROR! -> SQLException(4)");
             System.out.println(e);
         }
         return status;

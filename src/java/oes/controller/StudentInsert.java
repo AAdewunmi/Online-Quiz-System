@@ -6,19 +6,27 @@ package oes.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.WebServlet;
+
+//import javax.servlet.ServletException;
+//import javax.servlet.http.HttpServlet;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpServletResponse;
+
+
 import oes.db.Students;
 import oes.model.StudentsDao;
 
 /**
  *
  * @author adrianadewunmi
+ * 
  */
 @WebServlet("/oes.controller.StudentInsert")
+
 public class StudentInsert extends HttpServlet {
 
     public StudentInsert() {

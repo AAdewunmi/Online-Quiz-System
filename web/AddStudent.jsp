@@ -3,8 +3,12 @@
     Created on : 5 Jul 2022, 14:10:08
     Author     : adrianadewunmi
 --%>
+
+<%@page import="oes.controller.*" %>
+<%@page import="oes.controller.StudentInsert" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -25,7 +29,8 @@
   </head>
   <body>
     <h2><font  face = "WildWest" color="blue">Enter Student Details</font></h2>
-        <form action="oes.controller.StudentInsert">
+    
+    <form class="" action="oes.controller.StudentInsert" method="">
         <pre>
         Name:         <input type="text" name="name">
 
