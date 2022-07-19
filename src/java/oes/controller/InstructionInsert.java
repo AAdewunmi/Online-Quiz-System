@@ -44,10 +44,11 @@ public class InstructionInsert extends HttpServlet {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         
-        Instructions ist = new Instructions();
-        ist.getInstruction();
-        
         String instruction = request.getParameter("inst");
+        
+        Instructions ist = new Instructions();
+        ist.setInstruction(instruction);
+        //ist.getInstruction();
         
         boolean status = InstructionsDao.insertInstruction(ist);
         

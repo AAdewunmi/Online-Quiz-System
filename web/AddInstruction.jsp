@@ -30,7 +30,7 @@
         Instruction    <input type="text" name="inst">
 
 
-                     <input type="submit" value="Add" class="btn btn-outline-primary">   <input type="button" onclick="location.href='AdminPanel.jsp'" value="Home" class="btn btn-outline-success">    <input type="button" onclick="location.href='InstructionList.jsp'" value="Back" class="btn btn-outline-danger">
+        <input type="submit" value="Add" class="btn btn-outline-primary"> <input type="button" onclick="location.href='AdminPanel.jsp'" value="Home" class="btn btn-outline-success"> <input type="button" onclick="location.href='InstructionList.jsp'" value="Back" class="btn btn-outline-danger">
         </pre>
         </form>
         <div>
