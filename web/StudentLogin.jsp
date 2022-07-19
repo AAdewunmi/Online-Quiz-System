@@ -75,7 +75,7 @@
            
             <label class="inp">
               <input type="text" class="input-text" placeholder="&nbsp;" name="uname">
-              <span class="label">User Name</span>
+              <span class="label">User Id</span>
               <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
             </label>
             <label class="inp">
@@ -84,7 +84,6 @@
               <span class="input-icon input-icon-password" data-password><i class="fa-solid fa-eye"></i></span>
             </label>
             <button class="btn btn-login" type="submit" value="login">Login</button>
-           
           </form>
           
         </main>
