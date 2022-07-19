@@ -40,7 +40,7 @@
       
     <div class="container">
         <main class="signup-container">
-          <h1 class="heading-primary">Log in<span class="span-blue">.</span></h1>
+          <h1 class="heading-primary">Examiner Log in<span class="span-blue">.</span></h1>
           <p class="text-mute">Enter your credentials to access your account.</p>
           <div class="login-wrapper">
             <a href="#" class="btn btn-google">
