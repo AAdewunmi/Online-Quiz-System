@@ -82,7 +82,7 @@ public class StudentsDao {
             
             while(rs.next()){
                 Students s = new Students();
-                s.setName(rs.getString(1));
+                s.setUsername(rs.getString(1));
                 s.setPassword(rs.getString(2));
                 s.setName(rs.getString(3));
                 samp.add(s);
