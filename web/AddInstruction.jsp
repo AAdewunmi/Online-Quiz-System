@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <meta charset="ISO-8859-1">
     <title>Add Instructions</title>
+    <link rel="stylesheet" href="indexStyle.css"/>
   </head>
   <body>
     <h2><font  face = "WildWest" color="blue">Enter Instruction Here</font></h2>
@@ -47,6 +48,11 @@
 		%>
 		</font>
 	</div>
+    <div class="footer">
+        <footer>
+             © 2022 Examily, Inc. 
+        </footer>
+      </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
