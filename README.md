@@ -33,7 +33,51 @@ It allows access to two types of users, with the following functions:
 
 ## 3. Installing
 
+Project Prerequisite: 
+- Apache NetBeans 13.0, 
+- Apache Tomcat Server 10.0, 
+- MySQL Server, 
+- MySQL Workbench (Optional ... I prefer to perform MySql operations at the command line "mysql -u root -p")
+- Be mindful that you will need to add the following libraries to the project:
 
+(a) mysql-connector-java-8.0.17.jar
+
+(b) jsp-api.jar
+
+(c) servlet-api.jar
+
+- How to use:
+
+1. Clone the repo.
+
+```
+https://github.com/AAdewunmi/Online-Quiz-System.git
+```
+
+2. Database
+
+- Start MySQL Server
+
+- Create tables in MySQL (SQL queries are in /web/db.txt)
+
+3. IDE:
+
+- Open project in NetBeans
+
+- Start Apache Tomcat Server
+
+- Run the application in the IDE (NetBeans)
+
+- On "Evently" landing page:
+
+        (i) Login as an Admin:
+        
+        Admin username -> admin
+        
+        Admin password -> admin
+        
+Enjoy 😎
+        
 ## 4. Contributing:
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
