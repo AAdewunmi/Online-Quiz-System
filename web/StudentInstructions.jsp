@@ -28,6 +28,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="indexStyle.css"/>
     <title>Student to Instructions</title>
   </head>
   <body>
@@ -66,6 +67,11 @@
             <button type="button" class="btn btn-outline-primary btn-lg" onclick="location.href='oes.controller.LogoutStudent'">Logout</button>   <button type="button" class="btn btn-outline-primary btn-lg" onclick="location.href='Exam.jsp'">Start Test</button>
        </pre>
        </center>
+       <div class="footer">
+        <footer>
+             © 2022 Examily, Inc. 
+        </footer>
+      </div>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
