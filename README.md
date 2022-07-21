@@ -1,46 +1,73 @@
-# Examily: An Online Quiz System (Work-In-Progress)
+# Examily: An Online Quiz System 
 
-## What is the project? 
 
-The aim of this project is to develop a quiz-based examination platform for University level courses.
+## 1. Project Description:
 
-### Screenshot of the landing page:
+Examily is a quiz-based examination platform for University level courses.
+
+It allows access to two types of users, with the following functions:
+
+- Examiner -> Log in, Register Students (User Name & Password), Set Exam Instructions, Set Exam Questions & Answers, Log Out.
+    
+- Student -> Log In, Take Exam, View Results, Log Out.
+
+
+## 2. Tech Stack:
+
+- HTML / CSS / JavaSript / Bootstrap
+
+- Java 11 / Java EE version 8 (Jakarta EE version 8)
+
+- Java JSP
+
+- Java Servlet
+
+- JDBC Driver
+
+- MySQL DB / MySQL Server / MySQL Workbench
+
+- Apache Tomcat Server
+
+- Apache Netbeans IDE
+
+
+## 3. Installing
+
+
+## 4. Contributing:
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+👇 👇 👇
+
+Future plans:
+
+1. Examily Landing Page: 
+- Implement "Search Button" functionality 
+- Implement "Recieve Our Newsletter!" Button functionality
+2. Examiner Login Page:
+- Implement Log In With Google Button functionality
+- Implement Sign up link -> Create new account page (Landing page link!)
+3. Student Login Page:
+- Implement Log In With Google Button functionality
+
+
+## 5. Screenshots
+
+- Examily landing page:
 
 ![Image description](web/landing3.png)
 
-## Tech Stack:
+- Examily examiner landing page:
 
-1. HTML / CSS / JavaSript / Bootstrap
+![Image description](web/admin.png)
 
-2. Java 11 / Java EE version 8 (Jakarta EE version 8)
+- Examily stduent landing page:
 
-3. Java JSP
+![Image description](web/student.png)
 
-4. Java Servlet
-
-5. JDBC Driver
-
-6. MySQL DB / MySQL Server / MySQL Workbench
-
-7. Apache Tomcat Server
-
-8. Apache Netbeans IDE
-
-
-## What is the MVP?
-
-1. Administration User: Create User Account, Login, Set Quiz, View Results, Log Out.
-
-2. Student User: Login, Take Quiz, Log Out.
-
-## What are the sprinkles (Nice to haves)? 
-
-## When will the project be complete? 
-
-The project will be complete once all the MVP features have been implemented.
 
 ## Adapted from:
-
 
 UDEMY: Java Development Mega Course: Build Projects Practically
 
